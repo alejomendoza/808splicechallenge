@@ -1,0 +1,177 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.pageWrap{
+
+  width: 980px;
+  margin:0 auto;
+  border:1px solid black;
+  margin-top:20%;
+}
+
+.play-controls{
+
+  height: 40px;
+  width:100%;
+  display:table;
+
+}
+
+.play-controls > div{
+
+  display: table-cell;
+  border: 1px solid black;
+  height: 50px;
+  text-align: center;
+}
+
+.play-controls > input{
+
+  display: table-cell;
+  border: 1px solid black;
+  height: 100%;
+  text-align: center;
+
+}
+
+.right-header-wrap{
+
+  display: table;
+
+}
+
+.wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.square-step{
+
+  width:50px;
+  height: 50px;
+  border: 1px solid black;
+  display: inline-block;
+
+}
+
+.square-step p{
+  text-align: center;
+  padding-top: 0px;
+}
+
+.header {
+  display: table;
+}
+
+.step-description {
+  display: table-cell;
+  width: 118px;
+}
+
+.grid {
+  display: table;
+}
+
+.left-section {
+  display: table-cell;
+  width: 118px;
+  vertical-align: middle;
+}
+.title {
+  padding-left: 10px;
+}
+
+.right-section {
+  display: table-cell;
+}
+
+.pattern-info {
+  display: table;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 2%;
+}
+
+.save-pattern {
+  display: inline-block;
+  margin-left: 40px;
+  cursor: pointer;
+  color:#8AB66B
+}
+
+.drum-patterns {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pattern {
+  width: 20%;
+  margin: 2%;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: top;
+  cursor:pointer;
+}
+.presetname {
+  display: table-cell;
+}
+
+.instrument{height: 50px;}
+
+
+.active{
+  background: #c9de96; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #c9de96 0%, #8ab66b 44%, #398235 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#c9de96), color-stop(44%,#8ab66b), color-stop(100%,#398235)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #c9de96 0%,#8ab66b 44%,#398235 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #c9de96 0%,#8ab66b 44%,#398235 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #c9de96 0%,#8ab66b 44%,#398235 100%); /* IE10+ */
+  background: linear-gradient(135deg, #c9de96 0%,#8ab66b 44%,#398235 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+.selected{
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+  background: #efc5ca; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#efc5ca), color-stop(50%,#d24b5a), color-stop(51%,#ba2737), color-stop(100%,#f18e99)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}

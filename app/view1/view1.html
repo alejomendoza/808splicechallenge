@@ -1,0 +1,53 @@
+<div class="pageWrap">
+    <div class="play-controls">
+        <div ng-click="playPattern()"><p>Play</p></div>
+        <div ng-click="stopPattern()"><p>Stop</p></div>
+        <input type="number" ng-model="tempo" class="tempo"/>
+    </div>
+    <div class="wrap">
+        <div class="eightoeight">
+            <div class="header">
+                <div class="step-description">
+                    <div class="title">Step</div>
+                </div>
+                <div class="right-header-wrap">
+                    <div class="square-step" ng-repeat="bar in preset.bars track by bar.position">
+                        <p>{{bar.position + 1}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="instrument" ng-repeat="instrument in instruments track by instrument.title">
+                    <div class="left-section">
+                        <div class="title">{{instrument.title}}</div>
+                    </div>
+                    <div class="right-section">
+                        <div class="row">
+                            <div ng-repeat="bar in preset.bars track by bar.position" class="square-step"
+                                 ng-class="{'active':barPosition === bar.position,'selected':bar[instrument.title].selected === true}"
+                                 ng-click="toggleSelection(bar, instrument)">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drum-patterns">
+                <div class="pattern-info">
+                    <input type="text" ng-model="preset.name" class="presetname" placeholder="Preset Name">
+                    <div class="save-pattern" ng-click="savePreset()">
+                        Add Preset
+                    </div>
+                    <div class="save-pattern" ng-click="clearPreset()">
+                        Clear Preset
+                    </div>
+                </div>
+                <div class="pattterns">
+                    <div class="pattern" ng-repeat="preset in presets" ng-click="changePreset(preset)">
+                        <p>{{preset.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
